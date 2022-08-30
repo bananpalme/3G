@@ -15,7 +15,8 @@ const Kage = {
     'eksempler': 'Gulerodskage, drømmekage, citronmåne, chokoladekage, banankage, palmekage, tærter?, hvad er ikke en kage? gurkemeje er i hvert fald.',
     'farve': 'Kager kommer i mange farver, og de er alle lige gode. den klassiske chokolade brun, mums. den bedste pisfarve fra citronmåne, og ikke mindst cumfarven fra glasur.',
     'form': 'alle kagernes former er formidable og gør mig blød i knæene. Det er altid godt med runde kurver, men også flade dele. Det hele er godt.',
-    'nagib': 'Nagib har sorte fødder'
+    'nagib': 'Nagib har sorte fødder',
+    'tuba': 'fødder'
 }
 
 
