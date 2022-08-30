@@ -6,7 +6,7 @@ const express = require('express')
 //opret en varialbe til express serveren
 const app = express()
 //definerer en port
-const port = 1337
+const port = 2000
 //vi laver en meget simple database
 const Kage = {
     'smag': 'Alt kage smager godt, uanset hvilken slags. sødmen gør bare ting ved mig som intet andet kan.',
@@ -19,9 +19,11 @@ const Kage = {
     'tuba': 'fødder'
 }
 
+//serve en statisk mappe i roden
+app.get('/', express.static('public'))
 
 //start en web server på port 1337
-app.get('/*', (req, res)=>{
+app.get('/api/*', (req, res)=>{
     console.log('Serverne fik besøg i roden')
     if(req.params[0]){
         console.log('WOW nogen vil bruge vores api: ' + req.params[0])
@@ -32,8 +34,6 @@ app.get('/*', (req, res)=>{
     }
 
         res.send(req.params[0])
-    }else{
-        res.send('Velkommen til min express server, som er min api for kage. Check de her for api: smag, følelse, vurdering, eksempler, farve, form, nagib ')
     }
    
 })
