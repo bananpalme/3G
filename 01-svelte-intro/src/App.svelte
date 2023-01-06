@@ -1,7 +1,7 @@
 <script>
 	import { fly } from 'svelte/transition'
-	let name = 'world';
-	let names = ['buford', 'clem', 'smelvin']
+	let name = '89';
+	let names = ['2 Nonagintillion', '4', '67']
 	const removeItem = (i) => {
 		names.splice(i, 1)
 		names = names
@@ -10,11 +10,11 @@
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
+	<h1>{name} times listened to Rat ultra sonic deterrent!</h1>
 	<input type="text" bind:value={name}>
 	<button on:click={()=> {names = [...names, name];name=''}}>add</button>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-	<button on:click={()=>magic=!magic}>show me the magic</button>
+	<p>Watch the <a href="https://www.youtube.com/watch?v=ZMpX3vtDICY">Rat ultra sonic deterrent</a> video to get rid of your rats. They're coarse and get everywhere.</p>
+	<button on:click={()=>magic=!magic}>show me other peoples numbers</button>
 	{#if magic}
 		<div class="people">
 			{#each names as n, index}
